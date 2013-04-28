@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\OpenExitDoorOnActivate.cs">
+    <Files>
+      <File FileName="Assets\Scripts\FocusLabel.cs" Line="36" Column="16" />
+      <File FileName="Assets\Scripts\HoverFocusLabel.cs" Line="18" Column="18" />
+      <File FileName="Assets\Scripts\LockCursorOnRun.cs" Line="8" Column="28" />
+      <File FileName="Assets\Scripts\OpenDoorOnActivate.cs" Line="11" Column="1" />
+      <File FileName="Assets\Scripts\OpenDoor.cs" Line="22" Column="60" />
+      <File FileName="Assets\Scripts\HoverPressActivate.cs" Line="16" Column="43" />
+      <File FileName="Assets\Scripts\AddInventoryOnActivate.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\PickupOnActivate.cs" Line="12" Column="31" />
+      <File FileName="Assets\Scripts\OpenExitDoorOnActivate.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\LoadNextLevelOnClick.cs" Line="5" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
