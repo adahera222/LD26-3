@@ -18,4 +18,8 @@ public class HoverPressActivate : MonoBehaviour {
 		}
 	}
 	
+	void OnClick() {
+		gameObject.SendMessage("OnActivate", SendMessageOptions.DontRequireReceiver);
+	}
+	
 }

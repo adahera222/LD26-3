@@ -13,6 +13,7 @@ public class OpenExitDoorOnActivate : MonoBehaviour {
 			gameObject.SendMessage("OnOpen", SendMessageOptions.DontRequireReceiver);
 			disableControls.Disable();
 			CompleteUI.SetActive(true);
+			Screen.lockCursor = false;
 		}
 	}
 	
@@ -22,8 +23,4 @@ public class OpenExitDoorOnActivate : MonoBehaviour {
 		disableControls = GameObject.Find("Player").GetComponent<DisableControls>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

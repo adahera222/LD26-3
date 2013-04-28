@@ -1,20 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : MonoBehaviour {
-	public float closedAngle = 0f;
-	public float openAngle = 160f;
+public class OpenPainting : MonoBehaviour {
+	public float closedDistance = 0f;
+	public float openDistance = 2f;
 	public MonoBehaviour[] disableOnOpen;
 	public AudioClip openSound;
 	
-	float initialAngle;
+	Vector3 initialPosition;
 	
 	void Start() {
-		initialAngle = transform.rotation.eulerAngles.y;
+		initialPosition = transform.position;
 	}
 		
 	void OnOpen() {
-		iTween.RotateTo(gameObject, iTween.Hash("y", initialAngle + openAngle));
+		if(!enabled) { return; }
+		
+		iTween.MoveTo(gameObject, iTween.Hash("y", initialPosition.y - openDistance, "easetype", "easeInQuad", "time", .5f));
 		AudioSource.PlayClipAtPoint(openSound, transform.position);
 		foreach(MonoBehaviour comp in disableOnOpen) {
 			comp.enabled = false;

@@ -1,12 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class AddInventoryOnActivate : MonoBehaviour {
-	Inventory inventory;
-	
+public class PressOnActivate : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
-		inventory = GameObject.Find("Player").GetComponent<Inventory>();
+	
 	}
 	
 	// Update is called once per frame

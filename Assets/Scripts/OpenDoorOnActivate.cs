@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof (OpenDoor))]
 public class OpenDoorOnActivate : MonoBehaviour {
 
 	void OnActivate() {
+		if(!enabled) { return; }
+		
 		gameObject.SendMessage("OnOpen", SendMessageOptions.DontRequireReceiver);
 	}
 }
