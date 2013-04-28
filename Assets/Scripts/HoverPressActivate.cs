@@ -5,6 +5,7 @@ public class HoverPressActivate : MonoBehaviour {
 	bool mouseOver = false;
 	
 	void OnMouseEnter() {
+		Debug.Log("mouse enter");
 		mouseOver = true;
 	}
 	
@@ -13,7 +14,8 @@ public class HoverPressActivate : MonoBehaviour {
 	}
 	
 	void Update() {
-		if(mouseOver && Input.GetMouseButtonDown(0)) {
+		//if(mouseOver && (Input.GetMouseButtonDown(0) || Input.GetButtonDown ("Fire1"))) {
+		if(mouseOver && Input.GetButtonDown ("Fire1")) {
 			gameObject.SendMessage("OnActivate", SendMessageOptions.DontRequireReceiver);
 		}
 	}
